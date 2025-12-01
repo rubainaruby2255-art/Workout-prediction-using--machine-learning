@@ -21,7 +21,7 @@ data = load_data()
 # --- Prepare Data + Model ---
 @st.cache_resource
 def train_model(data):
-    drop_cols = [
+    drop_cols = [  
         'Name of Exercise', 'Burns_Calories_Bin', 'Target Muscle Group', 'Equipment Needed',
         'Benefit', 'Body Part', 'Type of Muscle', 'Burns Calories (per 30 min)',
         'Burns Calories (per 30 min)_bc', 'Fat_Percentage_bc', 'meal_name', 'cooking_method',
